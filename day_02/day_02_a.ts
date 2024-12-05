@@ -22,7 +22,8 @@ const main = async () => {
     let onlyDesc = true;
 
     for (let j = 0; j < row.length - 1; j++) {
-      const level = +row[j + 1] - +row[j];
+      const level = +row[j] - +row[j + 1];
+
       if (level > 0) {
         onlyDesc = false;
       }
